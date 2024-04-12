@@ -1,0 +1,1 @@
+This "1-UML" folder will contains all UML diagram which represent the architecture of the project.
