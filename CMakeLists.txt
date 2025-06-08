@@ -35,6 +35,7 @@ file(GLOB HDR_FLES
 "${CMAKE_CURRENT_SOURCE_DIR}/sources/inc/gui/*.h"
 )
 
+
 ##################################################
 # QT packages
 ##################################################
@@ -61,7 +62,7 @@ qt_wrap_ui(GENERATED_UI_FILES ${UI_FILES})
 ##################################################
 
 # Create the executable
-add_executable(${PROJ_NAME} ${SRC_FILES} ${HDR_FLES} ${GENERATED_UI_FILES})
+add_executable(${PROJ_NAME} WIN32 ${SRC_FILES} ${HDR_FLES} ${GENERATED_UI_FILES})
 
 
 ##################################################
