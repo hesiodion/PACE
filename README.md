@@ -10,7 +10,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/hesiodion/PACE">
-    <img src="resources/icon/svg/PACE_256x256.svg" alt="Logo" width="256" height="256">
+    <img src="res/PACE_256x256.svg" alt="Logo" width="256" height="256">
   </a>
 
 <h1 align="center">PACE</h1>
@@ -171,7 +171,7 @@ Project Link: [PACE](https://github.com/hesiodion/PACE)
 [issues-url]: https://github.com/hesiodion/PACE/issues
 [license-shield]: https://img.shields.io/github/license/hesiodion/PACE.svg?style=for-the-badge
 [license-url]: https://github.com/hesiodion/PACE/blob/master/LICENSE
-[product-screenshot]: resources/icon/svg/PACE_256x256.svg
+[product-screenshot]: res/PACE_256x256.svg
 
 [cplusplus]: https://img.shields.io/badge/cplusplus-00599C?style=for-the-badge&logo=cplusplus&logoColor=61DAFB
 [cplusplus-url]: https://en.cppreference.com/w/
