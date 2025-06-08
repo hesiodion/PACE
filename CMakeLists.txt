@@ -1,4 +1,4 @@
-﻿##################################################
+##################################################
 # CMAKE Version 
 ##################################################
 cmake_minimum_required (VERSION 3.25)
@@ -35,6 +35,7 @@ file(GLOB HDR_FLES
 "${CMAKE_CURRENT_SOURCE_DIR}/sources/inc/gui/*.h"
 )
 
+
 ##################################################
 # QT packages
 ##################################################
@@ -43,7 +44,7 @@ set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 
-set(CMAKE_PREFIX_PATH "C:/Qt/6.8.3/msvc2022_64/lib/cmake")
+set(CMAKE_PREFIX_PATH "%SystemDrive%/Qt/6.8.3/msvc2022_64/lib/cmake")
 set(CMAKE_AUTOUIC_SEARCH_PATHS "${CMAKE_CURRENT_SOURCE_DIR}/sources/ui")
 
 file(GLOB UI_FILES 
@@ -61,7 +62,7 @@ qt_wrap_ui(GENERATED_UI_FILES ${UI_FILES})
 ##################################################
 
 # Create the executable
-add_executable(${PROJ_NAME} ${SRC_FILES} ${HDR_FLES} ${GENERATED_UI_FILES})
+add_executable(${PROJ_NAME} WIN32 ${SRC_FILES} ${HDR_FLES} ${GENERATED_UI_FILES})
 
 
 ##################################################
