@@ -1,0 +1,10 @@
+# .gitignore sample for PACE project
+
+# Git folder
+
+.git/
+
+# Visual Studio files and production folder
+
+.vs/
+out/
