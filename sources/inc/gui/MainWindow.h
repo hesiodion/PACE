@@ -2,6 +2,9 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <memory>
+#include "AppBase.h"
+
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -14,9 +17,9 @@ class MainWindow : public QMainWindow
     Q_OBJECT
 public:
     MainWindow(QWidget* parent = nullptr);
-    ~MainWindow();
+    virtual ~MainWindow();
 
 private:
-    Ui::MainWindow* m_ui;
+    std::unique_ptr<Ui::MainWindow> m_ui;
 };
-#endif // MAINWINDOW_H
+#endif //! MAINWINDOW_H

@@ -27,12 +27,15 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 # Set all the source files
 file(GLOB SRC_FILES
 "${CMAKE_CURRENT_SOURCE_DIR}/sources/src/gui/*.cpp"
-"${CMAKE_CURRENT_SOURCE_DIR}/sources/*.cpp"
+"${CMAKE_CURRENT_SOURCE_DIR}/sources/src/core/*.cpp"
+"${CMAKE_CURRENT_SOURCE_DIR}/sources/src/*.cpp"
 )
 
 # Set all the header files
 file(GLOB HDR_FLES
 "${CMAKE_CURRENT_SOURCE_DIR}/sources/inc/gui/*.h"
+"${CMAKE_CURRENT_SOURCE_DIR}/sources/inc/core/*.h"
+"${CMAKE_CURRENT_SOURCE_DIR}/sources/inc/common/*.h"
 )
 
 
@@ -72,6 +75,8 @@ add_executable(${PROJ_NAME} WIN32 ${SRC_FILES} ${HDR_FLES} ${GENERATED_UI_FILES}
 # Set the path to the include files
 include_directories(
 "${CMAKE_CURRENT_SOURCE_DIR}/sources/inc/gui/"
+"${CMAKE_CURRENT_SOURCE_DIR}/sources/inc/core/"
+"${CMAKE_CURRENT_SOURCE_DIR}/sources/inc/common/"
 ${CMAKE_BINARY_DIR}
 )
 
