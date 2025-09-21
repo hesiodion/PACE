@@ -1,10 +1,15 @@
 # .gitignore sample for PACE project
 
 # Git folder
-
 .git/
 
 # Visual Studio files and production folder
-
 .vs/
 out/
+
+# CLion files and production folder
+.idea/
+
+#CMake production folder
+cmake-build-debug/
+cmake-build-release/
